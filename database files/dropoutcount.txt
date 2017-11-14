@@ -1,0 +1,11 @@
+CREATE TABLE public.dropoutcount
+(
+    uidai character varying(12) COLLATE pg_catalog."default"
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.dropoutcount
+    OWNER to postgres;

@@ -1,0 +1,23 @@
+
+CREATE TABLE public.staff
+(
+    staff_name character(20) COLLATE pg_catalog."default",
+    gender character(10) COLLATE pg_catalog."default",
+    mail_id character varying(30) COLLATE pg_catalog."default",
+    type_of_staff character(10) COLLATE pg_catalog."default",
+    "Institution_name" character(60) COLLATE pg_catalog."default",
+    qualification character(10) COLLATE pg_catalog."default",
+    salary_credited character(20) COLLATE pg_catalog."default",
+    uidai numeric(12),
+    acc_no numeric(20),
+    contact_no numeric(10),
+    joined_year numeric(4),
+    dob character varying(10) COLLATE pg_catalog."default"
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.staff
+    OWNER to postgres;

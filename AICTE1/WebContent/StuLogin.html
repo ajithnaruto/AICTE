@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Institution login</title>
+	<!--bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<!--materlize css-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+	<script>
+	function validateForm() {
+	    var x = document.forms["stu_login"]["uidai"].value;
+	    var y = document.forms["stu_login"]["reg_no"].value;
+	    if (x == "") {
+	        alert("First Fill UIDAI");
+	        return false;
+	    }
+	    else if(y=="")
+	    	{
+	    	 alert("Give your reg_no");
+		        return false;
+	    	}
+	}
+	</script>
+	
+</head>
+<body>
+<nav style="background-color: #8A34FA;" id="navbar" >
+		<div class="container" >
+
+
+
+			<div class="nav-wrapper ">
+				<a href="index.html" class="brand-logo">IEIU</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="/AICTE1/emailverification/emailverindex.jsp">Institution</a></li>
+					
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="container" style="margin-left: 40%">
+		<div class="row" style="margin-top: 10%">
+			<div class="col-lg-4" style="border: 2px ">
+				<center><h5>Sign In</h5></center>
+				<hr width=70%>
+				<form name="stu_login" class="form-group"  action="/AICTE1/stulogin" onsubmit="return validateForm()" method="post" >
+											
+					UIDAI
+					<input type="number" name="uidai" class="form-control">
+					Reg_No
+					<input type="number" name="reg_no" class="form-control">
+					<input type="submit" value="Login" class="btn btn-default" />
+					</form>
+					
+
+				
+			</div>
+		</div>
+	</div>
+	<br><br><br>
+	<footer class="page-footer" style="background-color: #8A34FA;" id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col l6 s12">
+						<h5 class="white-text">About Us!</h5>
+						<p class="grey-text text-lighten-4">We are a power packed group of coders expertise in various forms of coding.</p>
+					</div>
+					<div class="col l4 offset-l2 s12">
+						<h5 class="white-text">Contact Us!</h5>
+						<ul>
+							<li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+							<li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+							<li><a class="grey-text text-lighten-3" href="#!">Gmail</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					<center style="font-size: 10px"> &copy; 2017 Anonymous Beings</center>
+
+				</div>
+			</div>
+		</footer>
+<!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+  <!--bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+</body>
+</html>

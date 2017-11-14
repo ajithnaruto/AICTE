@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="ISO-8859-1">	
+	<title>College Details</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <script type="text/javascript" src="js/colval.js"></script>
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+
+</head>
+
+<body>
+	
+	<div class="container" style="margin-left: 40%">
+		
+			<div class="row" style="margin-top: 12%">
+				<div class="col-lg-5" style="border: 2px ">
+					<center><h6>College Registration Form</h6></center>
+					<hr width=70%>
+					<form onSubmit="return formValidation()" class="form-group"  name="College" method="POST" action="/AICTE1/CollegeReg">
+
+						Institution Name
+						<input type="text" name="inst_name" class="form-control">
+						State
+						<input type="text" name="State" class="form-control">
+						ZipCode
+						<input type="text" name="Zip_Code" class="form-control">
+						Create a Password
+						<input type="text" name="password" class="form-control">
+						Institution_ID
+					  <input type="text" name="inst_id" class="form-control">
+						<center><input type="Submit" value="Submit" class="btn btn-default" /></center>
+					</form>
+
+
+
+				</div>
+			</div>
+		</div>
+
+		
+	</form>
+	<!-- Compiled and minified JavaScript MATERLIZE-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+	<!-- Latest compiled and minified JavaScript BOOTSTRAP -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
